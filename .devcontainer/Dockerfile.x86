@@ -74,7 +74,7 @@ RUN sudo apt-get update && sudo apt-get install --no-install-recommends -y \
     python3-dev \
     && sudo rm -rf /var/lib/apt/lists/*
 
-# RUN cd HybVIO/src/slam && ./download_orb_vocab.sh
+RUN cd HybVIO/src/slam && ./download_orb_vocab.sh
 
 ENV CC=clang
 ENV CXX=clang++
